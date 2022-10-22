@@ -1,6 +1,5 @@
 """List of prime numbers generator."""
 """ENTER YOUR SOLUTION HERE!"""
-
 def check_prime(number):
     num = int(number)
     if num == 1:
@@ -14,11 +13,10 @@ def check_prime(number):
             elif num % i != 0:
                 if i == round(num / 2):
                     return True
-
 def primes(number_of_primes):
     list = []
 
-    if number_of_primes < 0:
+    if number_of_primes < 1:
         raise ValueError('Enter number greater than 0')
 
     y = 1
